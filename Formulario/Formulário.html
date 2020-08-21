@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale =1.0">
+        <link rel = "stylesheet" type = "text/css" href ="/style/sla.css">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+        <form>
+
+            <h1 id = "form-title">Cadastre seu currículo</h1>
+
+                <h2 class = "sub-titles"> 1. Dados Pessoais </h2>  
+                      
+                <table> <td class = "infos">  Nome:  </td class = "infos">  <td class = "inputs">    <input  type = "text" name = "Nome"  placeholder = "Seu nome"required>    </td>  </table> 
+                <table> <td class = "infos">  Data de nascimento:   <td class = "inputs"> <input  type = "date" name = "Data" >  </td>   </table>
+                <table> <td class = "infos">  Estado Civil:    <td class = "inputs">  
+                    <select name = "Estado Civil">
+                        <option value = "Solteiro"> Solteiro </option>
+                        <option value = "Casado"> Casado </option>
+                        <option value = "Viúvo">Viúvo</option>
+                        <option value = "Divorciado">Divorciado</option>
+                    </select>
+                </table>
+                <table> <td class = "infos">  Sexo: </td>  <td class = "inputs">  Masculino  <input type = "radio" >  Feminino <input type="radio" required> </td>  </table>
+
+                <h2 class = "sub-titles"> 2.Objetivo</h2>
+
+                <table> <td class = "infos"> Objetivo </td> <td class= "inputs"> <input type = "text" name = "Objetivo" placeholder = "Digite seu objetivo" required> </td> </table>
+
+                <h2 class = "sub-titles"> 3.Contato    </h2>
+
+               <table> <td class = "infos"> Endereço:      </td>  <td class = "inputs"> <input type = "text"   name = "Seu Endereço" placeholder  = "Digite seu endereço" required>  </td> </table>
+               <table> <td class = "infos"> Cidade/Estado: </td>  <td class = "inputs"> <input type = "text"   name = "Cidade" placeholder = "Digite sua cidade" required> / <input type = "text" name = "Estado" placeholder = "Digite seu estado" required pattern="[A-Z]{2}">   </td> </table>
+               <table> <td class = "infos"> CEP:           </td>  <td class = "inputs"> <input type = "search" name = "CEP" placeholder = "Digite seu CEP (99999-999)" required pattern = "\d{5}[\-]\d{3}">  </td> </table>
+               <table> <td class = "infos"> Telefone:      </td>  <td class = "inputs"> <input type = "number" name = "Numero de Telefone" placeholder = "Digite seu telefone no formato (99)9999-9999" required pattern = "[\(]\d{2}[\)]\d{4}[\-]\d{4}"> </td> </table>
+               <table> <td class = "infos"> E-mail:        </td>  <td class = "inputs"> <input type = "text"   name = "E-mail" placeholder = "Digite seu e-mail" required> </td> </table>
+               <table> <td class = "infos"> Rede Social:   </td>  <td class = "inputs"> <img src = "/images/face.png"> htpp://www.facebook.com/ <input type ="url"  name = "site"    placeholder = "Perfil do facebook" /> <br>
+                                                                                        <img src = "/images/linkedin.png"> htpp://www.linkedin.com/ <input type ="url"  name = "site"    placeholder = "Perfil do linkedin" /> <br>
+                                                                                        <img src = "/images/skype.png"> <input type = "text" name = "Skype" placeholder="Perfil Skype"></td> </table>
+
+                <h2 class= "sub-titles">4.Conhecimentos</h2>
+
+               <table> <td class = "infos"> Linguagens de Programação: </td> <td class = "inputs"> 
+                                           <input type = "checkbox"> C/C++  <br> 
+                                           <input type = "checkbox">  Java  <br>
+                                           <input type = "checkbox">  Visual Basic <br>
+                                           <input type = "checkbox">  .Net  <br>
+                                           <input type = "checkbox">  PHP   <br>
+                                           <input type = "checkbox">  Python <br>
+                                           <input type = "checkbox">  Html  <br> </td> </table>
+
+                <table> <td class = "infos"> Idiomas: </td>  <td class = "inputs"> 
+
+                    Inglês  
+                    <select name = "Nível">
+                        <option value = "Baixo"> Baixo </option>
+                        <option value = "Intermediário"> Intermediário </option>
+                        <option value = "Avançado">Avançado</option>
+                    </select>
+
+                     |  Espanhol 
+                     <select name = "Nível">
+                        <option value = "Básico"> Básico </option>
+                        <option value = "Intermediário"> Intermediário </option>
+                        <option value = "Avançado">Avançado</option>
+                    </select> 
+
+                </table>
+
+                <div class = "button"> <input  type = "submit" name = "Enviar"> | <input  type = "reset" name = "Limpar"> </div>
+                                           
+                                        
+        </form>
+        
+
+
+
+    </body>
+
+</html>
